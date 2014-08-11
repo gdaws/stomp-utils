@@ -1,0 +1,6 @@
+{
+    "name": "stomp-utils",
+    "dependencies": {
+        "stompit": "~0.18.1"
+    }
+}
