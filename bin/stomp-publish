@@ -17,8 +17,9 @@ var argv = require('optimist')
 
 var fs          = require('fs');
 var stompit     = require('stompit');
-var util        = require('stompit/lib/util');
-var appUtil     = require('stompit/lib/util/app_cli').init(argv);
+var util        = require('util');
+var _           = require('underscore');
+var appUtil     = require('../lib/app_cli').init(argv);
 
 var uri = argv._[0];
 var destination = argv._[1];
@@ -78,7 +79,7 @@ failover.connect(function(error, client, reconnect) {
     userDefinedHeaders = appUtil.parseHeaderLines(argv.header);
   }
   
-  var message = client.send(util.extend(userDefinedHeaders, headers));
+  var message = client.send(_.extend(userDefinedHeaders, headers));
   
   message.once('finish', function() {
     appUtil.log(util.format('Sent message to \'%s\'', destination));

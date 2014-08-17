@@ -21,7 +21,7 @@ var argv = require('optimist')
 var util            = require('util');
 var child_process   = require('child_process');
 var stompit         = require('stompit');
-var appUtil         = require('stompit/lib/util/app_cli').init(argv);
+var appUtil         = require('../app_cli').init(argv);
 
 var uri = argv._[0];
 var destination = argv._[1];

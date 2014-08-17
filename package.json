@@ -1,6 +1,6 @@
 {
     "name": "stomp-utils",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "STOMP utility applications",
     "keywords": [
         "stomp", "messaging", "utils"
@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "stompit": "~0.18.1",
-        "optimist": "~0.6.0"
+        "optimist": "~0.6.0",
+        "underscore": "^1.6.0"
     }
 }
