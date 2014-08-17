@@ -1,6 +1,26 @@
 {
     "name": "stomp-utils",
+    "version": "0.0.1",
+    "description": "STOMP utility applications",
+    "keywords": [
+        "stomp", "messaging", "utils"
+    ],
+    "licenses": [
+        {
+          "type": "MIT",
+          "url": "https://raw.github.com/gdaws/node-stomp/master/LICENSE"
+        }
+    ],
+    "repository": {
+        "type":"git",
+        "url": "https://github.com/gdaws/stomp-utils.git"
+    },
+    "bin": {
+        "stomp-consume": "./bin/stomp-consume",
+        "stomp-publish": "./bin/stomp-publish"
+    },
     "dependencies": {
-        "stompit": "~0.18.1"
+        "stompit": "~0.18.1",
+        "optimist": "~0.6.0"
     }
 }
