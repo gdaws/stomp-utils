@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+/*jslint node: true, indent: 2, unused: true, maxlen: 80, camelcase: true */
+
+var nomnom = require('nomnom');
+
+var commands = [
+  'configure'
+];
+
+commands.forEach(function(command) {
+  require('../lib/command/' + command).init(nomnom);
+});
+
+nomnom.parse();

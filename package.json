@@ -17,11 +17,16 @@
     },
     "bin": {
         "stomp-consume": "./bin/stomp-consume",
-        "stomp-publish": "./bin/stomp-publish"
+        "stomp-publish": "./bin/stomp-publish",
+        "stomp": "./bin/stomp"
     },
     "dependencies": {
-        "stompit": "~0.18.1",
+        "stompit": "git://github.com/gdaws/node-stomp.git",
         "optimist": "~0.6.0",
-        "underscore": "^1.6.0"
+        "underscore": "^1.6.0",
+        "nomnom": "^1.8.0",
+        "inquirer": "~0.6.0",
+        "cli-color": "~0.3.2",
+        "js-yaml": "^3.2.1"
     }
 }
