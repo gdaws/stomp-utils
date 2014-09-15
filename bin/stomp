@@ -5,17 +5,11 @@
 var nomnom = require('nomnom');
 
 var commands = [
-  'configure', 'send'
+  'configure', 'send', 'subscribe'
 ];
 
 commands.forEach(function(command) {
   require('../lib/command/' + command).init(nomnom);
 });
-
-/*
-process.on('uncaughtException', function(e) {
-  process.exit(1);
-});
-*/
 
 nomnom.parse();
