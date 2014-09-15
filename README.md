@@ -5,7 +5,7 @@ Provides command-line interface utilities for sending and receiving messages fro
 ## Install
 
 ```bash
-npm install stomp-utils
+npm install -g stomp-utils
 ```
 
 ### Configure
