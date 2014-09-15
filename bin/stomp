@@ -4,6 +4,10 @@
 
 var nomnom = require('nomnom');
 
+process.on('uncaughtException', function() {
+  process.exit(1);
+});
+
 var commands = [
   'configure', 'send', 'subscribe'
 ];
