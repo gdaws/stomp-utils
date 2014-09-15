@@ -16,8 +16,6 @@
         "url": "https://github.com/gdaws/stomp-utils.git"
     },
     "bin": {
-        "stomp-consume": "./bin/stomp-consume",
-        "stomp-publish": "./bin/stomp-publish",
         "stomp": "./bin/stomp"
     },
     "dependencies": {
