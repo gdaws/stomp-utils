@@ -52,7 +52,7 @@ Consume a single message from a broker.
 stomp subscribe [options]
 ```
 
-The `---destination` option is required.
+The `--destination` option is required.
 
 Options:
 ```
