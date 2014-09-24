@@ -31,7 +31,7 @@ Send a message to a broker.
 stomp send [options]
 ```
 
-The `---destination` option is required.
+The `--destination` option is required.
 
 Options:
 ```
